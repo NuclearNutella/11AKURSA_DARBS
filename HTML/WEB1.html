@@ -27,11 +27,21 @@
             if (halogen && halogenCount > 0) {
                 name += `, {halogenCount} {halogen}`;
             }
+            document.getElementById('result').textContent = name;
+
         }
     </script>
 </head>
 <body>
-    <h1>Lapa 1</h1>
+    <h1>Ogļūdeņraža Nosaukuma Ģenerators</h1>
+    <label>C atomu skaits: <input type="number" id="carbon"></label><br>
+    <label>H atomu skaits: <input type="number" id="hydrogen"></label><br>
+    <label>Halogēna nosaukums: <input type="text" id="halogen"></label><br>
+    <label>Halogēna atomu skaits: <input type="number" id="halogenCount"></label><br>
+    <button onclick="generateName()">Ģenerēt Nosaukumu</button>
+    
+    <h2>Ogļūdeņraža Nosaukums:</h2>
+    <p id="result"></p>
     <nav>
         <ul>
             <li><a href="index.html">Sākumlapa</a></li>
