@@ -15,7 +15,18 @@
                 name = 'Metāns';
             } else if (carbon == 2) {
                 name = 'Etāns';
-            } 
+            }  else if (carbon == 3) {
+                name = 'Propāns';
+            } else if (carbon == 4) {
+                name = 'Butāns';
+            } else if (carbon == 5) {
+                name = 'Pentāns';
+            } else {
+                name = 'Programma ir nepilnīga. Lūdzu lietot tikai pirmos 5 ogļūdeņražus. ';
+            }
+            if (halogen && halogenCount > 0) {
+                name += `, {halogenCount} {halogen}`;
+            }
         }
     </script>
 </head>
