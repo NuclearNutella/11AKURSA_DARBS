@@ -20,22 +20,26 @@
             } else if (carbon == 4, hydrogen == 10) {
                 name = 'Butāns';
             } else if (carbon == 5, hydrogen == 12) {
-                name = 'Pentāns';}
-             if (carbon == 2, hydrogen == 4) {
-                    name = 'Etēns';
-            } else if (carbon == 3, hydrogen == 6) {
-                name = 'Propēns';   
-            } else if (carbon == 4, hydrogen == 8) {
-                name = 'But-1-ēns/But-2-ēns';
-            } else if (carbon == 5, hydrogen == 10) {
-                name = 'Pent-1-ēns/Pent-2-ēns/Pent-3-ēns';       
-            }  
+                name = 'Pentāns';}     
             else {
                 name = 'Kļūda. Lūdzu pārbaudiet ievadītās vērtības un lietot tikai pirmos 5 ogļūdeņražus. ';
             }
-            if (halogen && halogenCount > 0) {
-                name += `, ${halogenCount} ${halogen}`;
-            }
+            if (carbon == 2, hydrogen == 42) {
+                name = 'Etēns';
+        } else if (carbon == 3, hydrogen == 62) {
+            name = 'Propēns';   
+        } else if (carbon == 4, hydrogen == 82) {
+            name = 'But-1-ēns/But-2-ēns';
+        } else if (carbon == 5, hydrogen == 102) {
+            name = 'Pent-1-ēns/Pent-2-ēns/Pent-3-ēns';}  
+            if (carbon == 2, hydrogen == 23) {
+                name = 'Etīns';
+        } else if (carbon == 3, hydrogen == 43) {
+            name = 'Propīns';   
+        } else if (carbon == 4, hydrogen == 63) {
+            name = 'But-1-īns/But-2-īns';
+        } else if (carbon == 5, hydrogen == 83) {
+            name = 'Pent-1-īns/Pent-2-īns/Pent-3-īns';}  
             document.getElementById('result').textContent = name;
         }
     </script>
@@ -59,6 +63,9 @@
     </form>
     
     <h2>Ogļūdeņraža Nosaukums:</h2>
+    <p>Ja plānots iegūt ogļūdeņradi, kuram ir divkāršā vai trīskāršā saite, lietot saites ciparu
+        (2-divkāršā,3-trīskāršā) blakus ūdeņraža atomu skaitam, piemēram, etēns: C=2, H=62, lai vienkāršotu programmas darbību. 
+    </p>
     <p id="result"></p>
     <nav>
         <ul>
